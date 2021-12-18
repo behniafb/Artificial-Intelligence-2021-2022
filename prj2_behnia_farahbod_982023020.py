@@ -17,7 +17,7 @@ class PriorityQueue(object):
         self.queue.append(data)
 
     # for popping an element based on Priority
-    # priority is based on the MINIMUM of distances = MIN(heuristic)
+    # priority is based on the MINIMUM of g(n) + h(n) = MIN(f_cost)
     def pop(self):
         try:
             minIndex = 0
